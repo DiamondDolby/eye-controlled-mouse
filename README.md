@@ -34,7 +34,7 @@ This project uses **MediaPipe**, **OpenCV**, and **PyAutoGUI** to create a real-
 ## ▶️ How to Run
 
 ```bash
-python mainV1.0.py
+python main.py
 ```
 
 1. A webcam window will appear.
