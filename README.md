@@ -20,8 +20,8 @@ This project uses **MediaPipe**, **OpenCV**, and **PyAutoGUI** to create a real-
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/eye-mouse-controller.git
-   cd eye-mouse-controller
+   git clone https://github.com/yourusername/vision-mouse.git
+   cd vision-mouse
    ```
 
 2. **Install dependencies**
