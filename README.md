@@ -51,9 +51,6 @@ python mainV1.0.py
 
 - **Click delay** is hardcoded to 1 second (`time.sleep(1)`) to avoid multiple triggers — tune this if needed.
 
-## 📷 Demo
-
-> Add demo video or GIF here if available.
 
 ## 🤖 Future Improvements
 
@@ -62,10 +59,6 @@ python mainV1.0.py
 - Drag-and-drop or scrolling based on facial gestures.
 
 ## 🙋‍♂️ Author
-
-Sharavanan Mathivanan  
-Feel free to connect or reach out for collaboration.
-
-## 📄 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+### Sharavanan Mathivanan
+#### GitHub: https://github.com/DiamondDolby
+#### LinkedIn: https://www.linkedin.com/in/sharavanan-mathivanan/
