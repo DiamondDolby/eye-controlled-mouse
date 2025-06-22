@@ -25,8 +25,13 @@ This project uses **MediaPipe**, **OpenCV**, and **PyAutoGUI** to create a real-
    ```
 
 2. **Install dependencies**
+   #### Option A: if you have requirements.txt
    ```bash
-   pip install opencv-python mediapipe pyautogui
+   pip install -r requirements.txt
+   ```
+   #### Option B: Install manually
+   ```bash
+   pip install opencv-python pyautogui mediapipe
    ```
 
 > ⚠️ PyAutoGUI controls your actual mouse — be careful during testing.
