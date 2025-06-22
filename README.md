@@ -20,7 +20,7 @@ This project uses **MediaPipe**, **OpenCV**, and **PyAutoGUI** to create a real-
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/vision-mouse.git
+   git clone https://github.com/DiamondDolby/vision-mouse.git
    cd vision-mouse
    ```
 
