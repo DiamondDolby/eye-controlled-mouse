@@ -50,5 +50,5 @@ while True:
             print("Click triggered by blink")
             time.sleep(1)
 
-    cv2.imshow('Camera Feed', frame)
+    cv2.imshow('Camera Stream', frame)
     cv2.waitKey(1)
