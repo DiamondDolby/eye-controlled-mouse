@@ -3,19 +3,24 @@ import mediapipe as mp
 import pyautogui
 import time
 
-cam = cv2.VideoCapture(0)
+cam = cv2.VideoCapture(0) # Open the default camera
 
-face_mesh = mp.solutions.face_mesh.FaceMesh(refine_landmarks=True)
-screen_w, screen_h = pyautogui.size()
+face_mesh = mp.solutions.face_mesh.FaceMesh(refine_landmarks=True) # Initialize FaceMesh
+screen_w, screen_h = pyautogui.size() # Get screen dimensions
+
 
 while True:
     _, frame = cam.read()
+    # Flip the frame horizontally for a mirror effect
     frame = cv2.flip(frame, 1)
+    # Convert frame to RGB for MediaPipe processing
     rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
     output = face_mesh.process(rgb_frame)
-    landmark_points = output.multi_face_landmarks
+    landmark_points = output.multi_face_landmarks # Get the landmarks from the processed output
+    # Get the height and width of the frame
     frame_h, frame_w, _ = frame.shape
 
+    # Draw the face mesh on the frame
     if landmark_points:
         landmarks = landmark_points[0].landmark
         
@@ -47,7 +52,7 @@ while True:
         # Adjust threshold (tune this as per your camera/resolution)
         if diff < 0.015:
             pyautogui.click()
-            print("Click triggered by blink")
+            print("Blink detected")
             time.sleep(1)
 
     cv2.imshow('Camera Stream', frame)
